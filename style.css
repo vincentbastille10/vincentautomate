@@ -1,0 +1,47 @@
+.lead-section {
+  background: #0b1220;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.lead-box {
+  max-width: 500px;
+  width: 100%;
+  background: #1f2937;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.lead-box h2 {
+  margin-bottom: 10px;
+}
+
+.lead-box p {
+  color: #ccc;
+}
+
+.lead-box input,
+.lead-box textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.lead-box button {
+  width: 100%;
+  padding: 14px;
+  background: #facc15;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.urgency {
+  color: orange;
+  margin-top: 10px;
+}
