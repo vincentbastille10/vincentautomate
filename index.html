@@ -955,7 +955,36 @@
   <div class="sticky-mobile">
     <a href="#contact" class="btn btn-primary">Diagnostic gratuit</a>
   </div>
+<div id="betty-box" style="position:fixed; bottom:20px; right:20px; width:300px; background:#111; color:white; border-radius:10px; padding:15px; font-family:sans-serif; box-shadow:0 0 10px rgba(0,0,0,0.5);">
+  
+  <div style="font-weight:bold; margin-bottom:10px;">
+    🤖 Betty – Assistante IA
+  </div>
 
+  <input id="name" placeholder="Votre nom" style="width:100%; margin-bottom:8px; padding:8px; border-radius:5px; border:none;">
+  <input id="email" placeholder="Votre email" style="width:100%; margin-bottom:8px; padding:8px; border-radius:5px; border:none;">
+  <textarea id="msg" placeholder="Votre besoin..." style="width:100%; margin-bottom:8px; padding:8px; border-radius:5px; border:none;"></textarea>
+
+  <button onclick="sendLead()" style="width:100%; padding:10px; background:#00ff88; border:none; border-radius:5px; font-weight:bold;">
+    Envoyer
+  </button>
+
+  <div id="status" style="font-size:12px; margin-top:8px;"></div>
+</div>
+
+<script>
+function sendLead() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const msg = document.getElementById("msg").value;
+
+  const mail = `mailto:vincentbastille100@gmail.com?subject=Lead IA&body=Nom:${name}%0AEmail:${email}%0AMessage:${msg}`;
+  
+  window.location.href = mail;
+
+  document.getElementById("status").innerText = "Demande envoyée ✔️";
+}
+</script>
 </body>
   <div style="background:#000; color:white; padding:40px 20px; text-align:center;">
   
